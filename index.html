@@ -3,136 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APEC College</title>
+<title>APEC Login</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f4f4f4;
+    background:linear-gradient(135deg,#b30000,#ff6666);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
 }
 
-header{
-    background:#8B0000;
-    color:white;
+.container{
+    width:350px;
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
     text-align:center;
-    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
 }
 
-header img{
-    width:120px;
-    height:120px;
+.logo{
+    width:100px;
+    height:100px;
     border-radius:50%;
-    background:white;
-    padding:5px;
+    margin-bottom:10px;
 }
 
-header h1{
-    margin-top:10px;
-    font-size:30px;
+h2{
+    color:#b30000;
+    margin-bottom:5px;
 }
 
-header p{
-    font-size:18px;
-}
-
-nav{
-    background:#b30000;
-    text-align:center;
-    padding:12px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:yellow;
-}
-
-section{
-    text-align:center;
-    padding:50px;
-}
-
-section h2{
-    color:#8B0000;
+p{
+    color:#555;
     margin-bottom:20px;
+    font-size:14px;
 }
 
-section p{
-    font-size:18px;
-    line-height:1.8;
+.input-box{
+    width:100%;
+    margin:10px 0;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
 }
 
 button{
-    margin-top:25px;
-    padding:12px 25px;
-    background:#8B0000;
+    width:100%;
+    padding:12px;
+    background:#b30000;
     color:white;
     border:none;
-    font-size:18px;
+    border-radius:6px;
+    font-size:16px;
     cursor:pointer;
-    border-radius:5px;
+    margin-top:10px;
 }
 
 button:hover{
-    background:#b30000;
+    background:#800000;
 }
 
-footer{
-    background:#8B0000;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:40px;
+.footer{
+    margin-top:15px;
+    font-size:13px;
+    color:#666;
+}
+
+a{
+    color:#b30000;
+    text-decoration:none;
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
-    <img src="logo.png" alt="APEC Logo">
-    <h1>A.P.C. Mahalakshmi College of Engineering & Technology</h1>
-    <p>Arasur, Chatrapatti, Thoothukudi District</p>
-</header>
+<div class="container">
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Departments</a>
-    <a href="#">Admissions</a>
-    <a href="#">Contact</a>
-</nav>
+    <img src="logo.png" alt="APEC Logo" class="logo">
 
-<section>
-    <h2>Welcome to APEC College</h2>
+    <h2>APEC Login</h2>
 
-    <p>
-        A.P.C. Mahalakshmi College of Engineering & Technology is committed
-        to providing quality education, innovation, and research. The college
-        aims to prepare students for successful careers and responsible
-        citizenship through excellence in teaching and learning.
-    </p>
+    <p>Arulmigu Palaniandavar Polytechnic Engineering College</p>
 
-    <button onclick="alert('Welcome to APEC College!')">
-        Learn More
-    </button>
-</section>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Username" required>
+        </div>
 
-<footer>
-    <p>© 2026 A.P.C. Mahalakshmi College of Engineering & Technology</p>
-</footer>
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="footer">
+        Forgot Password? <a href="#">Click Here</a>
+    </div>
+
+</div>
 
 </body>
 </html>
