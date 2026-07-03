@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APEC Login</title>
-
-<style>
 *{
     margin:0;
     padding:0;
@@ -14,108 +6,104 @@
 }
 
 body{
-    background:linear-gradient(135deg,#b30000,#ff6666);
+    background:linear-gradient(rgba(139,0,0,0.75),rgba(139,0,0,0.75)),
+    url("https://college360.co.in/wp-content/uploads/2022/03/Adhiparasakthi-Engineering-College.jpg") no-repeat center center/cover;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .container{
-    width:350px;
-    background:#fff;
-    border-radius:12px;
-    padding:30px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:400px;
+    background:rgba(255,255,255,0.95);
+    padding:35px;
+    border-radius:15px;
     text-align:center;
-    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
 .logo{
     width:100px;
-    height:100px;
-    border-radius:50%;
     margin-bottom:10px;
 }
 
 h2{
-    color:#b30000;
+    color:#b00020;
+    font-size:22px;
     margin-bottom:5px;
 }
 
 p{
-    color:#555;
-    margin-bottom:20px;
+    color:#444;
+    font-weight:bold;
+}
+
+span{
+    display:block;
+    color:#777;
+    margin:10px 0 20px;
     font-size:14px;
 }
 
+h3{
+    color:#b00020;
+    margin-bottom:20px;
+}
+
 .input-box{
-    width:100%;
-    margin:10px 0;
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:15px;
+    padding:10px;
+}
+
+.input-box i{
+    color:#b00020;
+    margin-right:10px;
 }
 
 .input-box input{
     width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    font-size:15px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#b00020;
 }
 
 button{
     width:100%;
     padding:12px;
-    background:#b30000;
+    background:#b00020;
     color:white;
     border:none;
-    border-radius:6px;
-    font-size:16px;
+    border-radius:8px;
+    font-size:17px;
     cursor:pointer;
-    margin-top:10px;
+    transition:.3s;
 }
 
 button:hover{
     background:#800000;
 }
-
-.footer{
-    margin-top:15px;
-    font-size:13px;
-    color:#666;
-}
-
-a{
-    color:#b30000;
-    text-decoration:none;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <img src="logo.png" alt="APEC Logo" class="logo">
-
-    <h2>APEC Login</h2>
-
-    <p>Arulmigu Palaniandavar Polytechnic Engineering College</p>
-
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Username" required>
-        </div>
-
-        <div class="input-box">
-            <input type="password" placeholder="Password" required>
-        </div>
-
-        <button type="submit">Login</button>
-    </form>
-
-    <div class="footer">
-        Forgot Password? <a href="#">Click Here</a>
-    </div>
-
-</div>
-
-</body>
-</html>
