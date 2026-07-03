@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEC Website</title>
+    <title>APEC College</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: #f4f4f4;
         }
 
         header {
-            background-color: #003366;
+            background: #003366;
             color: white;
             padding: 15px;
             display: flex;
             align-items: center;
         }
 
-        .logo {
+        header img {
             width: 70px;
             height: 70px;
             margin-right: 15px;
         }
 
         nav {
-            background-color: #00509e;
+            background: #00509e;
             padding: 10px;
             text-align: center;
         }
@@ -39,41 +39,57 @@
             font-weight: bold;
         }
 
-        .content {
-            padding: 30px;
+        nav a:hover {
+            color: yellow;
+        }
+
+        .hero {
             text-align: center;
+            padding: 50px;
+            background: white;
+        }
+
+        .hero h1 {
+            color: #003366;
         }
 
         footer {
-            background-color: #003366;
+            background: #003366;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             margin-top: 30px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <img src="apec-logo.png" alt="APEC Logo" class="logo">
-    <h1>APEC Website</h1>
+    <img src="logo.png" alt="APEC Logo">
+    <div>
+        <h2>APEC College</h2>
+        <p>Welcome to Our Official Website</p>
+    </div>
 </header>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">About</a>
-    <a href="#">Services</a>
+    <a href="#">Courses</a>
+    <a href="#">Gallery</a>
     <a href="#">Contact</a>
 </nav>
 
-<div class="content">
-    <h2>Welcome to APEC</h2>
-    <p>This is a basic HTML webpage with an APEC logo and navigation menu.</p>
-</div>
+<section class="hero">
+    <h1>Welcome to APEC</h1>
+    <p>Empowering Students Through Quality Education.</p>
+
+    <img src="campus.jpg" alt="College Campus" width="600">
+</section>
 
 <footer>
-    <p>&copy; 2026 APEC. All Rights Reserved.</p>
+    <p>© 2026 APEC College. All Rights Reserved.</p>
 </footer>
 
 </body>
