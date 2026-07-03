@@ -1,64 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <img class="logo" src="data:image/png;base64,PASTE_THE_BASE64_IMAGE_HERE" alt="APEC Logo">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adhiparasakthi Engineering College - Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEC Login</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#8b0000,#d62828);
+}
+
+.container{
+    width:380px;
+}
+
+.login-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+.logo{
+    width:110px;
+    height:110px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#b30000;
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+p{
+    color:#444;
+    margin-bottom:5px;
+}
+
+span{
+    color:#b30000;
+    font-size:14px;
+    font-weight:bold;
+}
+
+h3{
+    margin:20px 0;
+    color:#333;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin:15px 0;
+    padding:12px;
+}
+
+.input-box i{
+    color:#b30000;
+    margin-right:10px;
+}
+
+.input-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:16px;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#b30000;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#b30000;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#800000;
+}
+
+.footer{
+    margin-top:20px;
+    color:#555;
+    font-size:13px;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <div class="login-box">
+<div class="login-box">
 
-        <img src="logo.png" class="logo">
+<img src="logo.png" alt="APEC Logo" class="logo">
 
-        <h2>ADHIPARASAKTHI ENGINEERING COLLEGE</h2>
+<h2>ADHIPARASAKTHI ENGINEERING COLLEGE</h2>
 
-        <p>Melmaruvathur</p>
+<p>Melmaruvathur - 603319</p>
 
-        <span>Study | Spirituality | Service</span>
+<span>STUDY | SPIRITUALITY | SERVICE</span>
 
-        <h3>LOGIN</h3>
+<h3>LOGIN</h3>
 
-        <form>
+<form>
 
-            <div class="input-box">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Username">
-            </div>
+<div class="input-box">
+<i class="fa-solid fa-user"></i>
+<input type="text" placeholder="Username" required>
+</div>
 
-            <div class="input-box">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Password">
-            </div>
+<div class="input-box">
+<i class="fa-solid fa-lock"></i>
+<input type="password" placeholder="Password" required>
+</div>
 
-            <div class="options">
+<div class="options">
+<label>
+<input type="checkbox">
+Remember Me
+</label>
 
-                <label>
-                    <input type="checkbox">
-                    Remember Me
-                </label>
+<a href="#">Forgot Password?</a>
+</div>
 
-                <a href="#">Forgot Password?</a>
+<button type="submit">
+LOGIN
+</button>
 
-            </div>
+</form>
 
-            <button>LOGIN</button>
+<div class="footer">
+© 2026 Adhiparasakthi Engineering College
+</div>
 
-        </form>
-
-    </div>
+</div>
 
 </div>
 
 </body>
-</html>    
+</html>
